@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <!-- HTML Basics for: Anis Zidane -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A single HTML file showing core HTML elements. Owner: Anis Zidane." />
+  <title>Anis Zidane the first project</title>
+</head>
+<body id="top">
+  <!-- ================= HEADER & NAV ================= -->
+  <header>
+   <h1>first project  Anis Zidane</h1>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#text">Text</a> |
+      <a href="#lists">Lists</a> |
+      <a href="#links">Links & Images</a> |
+      <a href="#table">Table</a> |
+      <a href="#form">Form</a> |
+      <a href="#media">Media</a> |
+      <a href="#semantics">Semantics</a> |
+      <a href="#entities">Entities</a>
+    </nav>
+    <hr>
+  </header>  <!-- ================= MAIN CONTENT ================= -->  <main>
+    <!-- About section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! My name is <strong>Anis Zidane</strong>. This page is a simple, English-only HTML file that demonstrates many <em>core</em> HTML elements without any CSS or JavaScript.</p>
+      <p>Quick facts:
+        <ul>
+          <li>File type: plain <code>.html</code></li>
+          <li>Goal: show common tags in one place</li>
+          <li>Last updated: <time datetime="2025-08-29">August 29, 2025</time></li>
+        </ul>
+      </p>
+    </section><hr>
+
+<!-- Text formatting section -->
+<section id="text">
+  <h2>Text & Inline Elements</h2>
+  <p>This paragraph includes <b>bold</b>, <i>italic</i>, <u>underline</u>, <strong>strong importance</strong>, and <em>emphasis</em>.</p>
+  <p>Code sample: <code>&lt;h1&gt;Hello, Anis!&lt;/h1&gt;</code></p>
+  <p>Keyboard input: press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.</p>
+  <p>Short quotation: <q>Learning HTML is fun.</q></p>
+  <blockquote cite="https://www.w3.org/TR/html52/">
+    HTML provides the structure of a web page and helps organize content.
+  </blockquote>
+  <p>Abbreviation example: <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+  <p>Line break example:<br>First line<br>Second line</p>
+  <pre>
+
+Preformatted text keeps line breaks     and    spaces. </pre> <p>A horizontal rule appears below:</p> <hr> </section>
+
+<hr>
+
+<!-- Lists section -->
+<section id="lists">
+  <h2>Lists</h2>
+  <h3>Unordered List</h3>
+  <ul>
+    <li>Item one</li>
+    <li>Item two</li>
+    <li>Item three</li>
+  </ul>
+
+  <h3>Ordered List</h3>
+  <ol>
+    <li>Step one</li>
+    <li>Step two</li>
+    <li>Step three</li>
+  </ol>
+
+  <h3>Description List</h3>
+  <dl>
+    <dt>Browser</dt>
+    <dd>A program that displays web pages.</dd>
+    <dt>Markup</dt>
+    <dd>Tags that describe the structure of the content.</dd>
+  </dl>
+</section>
+
+<hr>
+
+<!-- Links & images section -->
+<section id="links">
+  <h2>Links & Images</h2>
+  <p>
+    External link: <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a>
+  </p>
+  <figure>
+    <img src="https://via.placeholder.com/480x220" alt="Placeholder image" width="480" height="220">
+    <figcaption>Example image with alt text.</figcaption>
+  </figure>
+  <p>
+    Internal page anchor: <a href="#top">Back to top</a>
+  </p>
+</section>
+
+<hr>
+
+<!-- Table section -->
+<section id="table">
+  <h2>Table</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <caption>Simple Data Table</caption>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Notebook</td>
+        <td>2</td>
+        <td>$4.50</td>
+      </tr>
+      <tr>
+        <td>Pencil</td>
+        <td>5</td>
+        <td>$1.25</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Total</td>
+        <td>$10.75</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+
+<hr>
+
+<!-- Form section -->
+<section id="form">
+  <h2>Form</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Contact Anis Zidane</legend>
+
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required>
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      <br><br>
+
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic">
+        <option value="question">Question</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+      <br><br>
+
+      <label>
+        <input type="checkbox" name="subscribe" value="yes"> Subscribe to updates
+      </label>
+      <br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message..."></textarea>
+      <br><br>
+
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+
+  <p>Progress example:</p>
+  <progress value="60" max="100">60%</progress>
+  <p>Meter example (skill level):</p>
+  <meter min="0" max="100" value="75">75</meter>
+</section>
+
+<hr>
+
+<!-- Media section -->
+<section id="media">
+  <h2>Media</h2>
+  <p>Audio</p>
+  <audio controls>
+    <source src="" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <p>Video</p>
+  <video width="400" height="225" controls>
+    <source src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<hr>
+
+<!-- Semantics section -->
+<section id="semantics">
+  <h2>Semantic Elements</h2>
+  <article>
+    <h3>Simple Article</h3>
+    <p>This is an <mark>article</mark> inside the semantics section. It demonstrates meaningful structure.</p>
+  </article>
+  <aside>
+    <p><small>Aside: extra information related to the main content.</small></p>
+  </aside>
+  <details>
+    <summary>More details</summary>
+    <p>Details content is hidden until expanded.</p>
+  </details>
+  <figure>
+    <img src="" alt="Another placeholder" width="320" height="160">
+    <figcaption>Figure with a caption.</figcaption>
+  </figure>
+</section>
+
+<hr>
+
+<!-- Entities & symbols section -->
+<section id="entities">
+  <h2>Entities & Symbols</h2>
+  <p>Copyright: &copy; <span id="year">2025</span> Anis Zidane</p>
+  <p>Non‑breaking space example: Anis&nbsp;Zidane</p>
+</section>
+
+  </main>  <!-- ================= FOOTER ================= -->  <footer>
+    <hr>
+    <p>Made by Anis Zidane. <a href="#top">Back to top</a></p>
+    <!-- End of HTML Basics demo -->
+  </footer>
+</body>
+</html>
